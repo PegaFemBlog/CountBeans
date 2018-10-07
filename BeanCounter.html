@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bean Counter</title>
+</head>
+<body>
+<script>
+function countBens() {
+	var i = 0;
+	var beans = 4;
+	beanImage = ("img src='blue-jelly-bean.png' >");
+	document.write("<table align='center'><tr><td>");
+	document.write("<h1>&nsbp;<br /> Here are your beans: </h1>");
+		for (i=0; i <= beans; i++) 
+			document.write(beanImage + "&nbsp; &nbsp;");
+	document.write("</td></tr></table>");
+}
+</script>
+
+<table align="center" width="70%"><tr><td>
+<h1>Count Beans!</h1>
+<p><input type="button" id="beans" value="Click to count beans" onclick="countBeans();" /></p>
+</td></tr></table>
+
+</body>
+</html>
