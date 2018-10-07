@@ -5,6 +5,7 @@
 </head>
 <body>
 <script>
+/*
 function countBeans() {
 	var i = 0;
 	var beans = 4;
@@ -12,6 +13,16 @@ function countBeans() {
 	document.write("<table align='center'><tr><td>");
 	document.write("<h1> &nbsp; <br /> Here are your beans: </h1>");
 		for (i=0; i <= beans; i++) 
+			document.write(beanImage + "&nbsp; &nbsp;");
+	document.write("</td></tr></table>");
+}*/
+function countBeans() {
+	
+	var beans = 4;
+	beanImage = ("<img src='bean.png'>");
+	document.write("<table align='center'><tr><td>");
+	document.write("<h1> &nbsp; <br /> Here are your beans: </h1>");
+		for (var i = beans; i >= 0; i--) 
 			document.write(beanImage + "&nbsp; &nbsp;");
 	document.write("</td></tr></table>");
 }
